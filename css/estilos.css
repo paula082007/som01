@@ -1,9 +1,9 @@
 :root {
   --cinza: #aaa;
-  --vermelha: rgb(6, 60, 94);
-  --vermelha-escura: #af303f;
+  --vermelha:var(--branca)rgb(14, 27, 36)
+  --vermelha-escura: #161515;
   --branca: #fff;
-  --luz: rgb(229, 255, 0);
+  --luz: rgb(0, 0, 0);
 }
 body {
   align-items: center;
