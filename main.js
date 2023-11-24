@@ -1,13 +1,22 @@
-//Declaração/criação da função TocaSom
-function TocaSomPom(idElementosAudio){
-    document.querySelector(idElementosAudio). play();
+function TocaSomPom(selectorElemento){
+    const elemento = document.querySelector(selectorElemento);
+
+    if(elemento && elemento.localName === 'audio'){
+        elemento.play9();
 }
-//chamda ou invocação da função tocaSomPom ao clicar no botão
+    else {
+        comsole.log('elementom ou selector não encontrado!')
+    }
+
+}
 const listadeteclas = document.querySelectorAll('.tecla')
+
 for(let contador = 0; contador < listadeteclas.length; contador++){
+
     const tecla = listadeteclas[contador]
     const efeito =  teclaclassList[1]
     const iAudio = `#som_${efeito}`;
+    
     teclaonclick = function(){
               TocaSom(iAudio)
 }
