@@ -9,13 +9,17 @@ for(let contador = 0; contador < listadeteclas.length; contador++){
     const efeito =  teclaclassList[1]
     const iAudio = `#som_${efeito}`;
     teclaonclick = function(){
-        TocaSom(iAudio)
+              TocaSom(iAudio)
 }
-tecla.onkeydwon =function(evento){
-    if(evento.code!='Tab')
+tecla.onkeydwon =function(evento) {
+     console.log(evento.cod == `Space`)
+
+    if(evento.code =='Tab') {
     tecla.classList.add('ativa')
-}
+        }
+
+    }
     tecla.onkeydwon =function(){  
         teclaclassList.remove('ativa')
-}
+    }
 }
